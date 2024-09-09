@@ -1,9 +1,13 @@
 import React from 'react'
 import { Text,StyleSheet} from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 function TabNavigator() {
   return (
-    <Text>Tab Navigator</Text>
+    <SafeAreaProvider>
+      <Text>Tab Navigator</Text>
+    </SafeAreaProvider>
+    
   )
 }
 
